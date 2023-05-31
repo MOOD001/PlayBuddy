@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>PlayBuddy</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap">
+    <style>
+      p {
+        font-family: 'Poppins', sans-serif;
+      }
+    </style>
+
+<style>
+  /* Link styles */
+  a {
+    color: rgb(217, 255, 0);; /* Normal link color */
+    /*text-decoration: none; /* Remove underline by default */
+  }
+
+  /* Hover state */
+  a:hover {
+    color: rgb(43, 255, 0); /* Color when hovering over the link */
+  }
+
+  /* Visited state */
+  a:visited {
+    color: rgb(217, 255, 0); /* Color for visited links */
+  }
+
+  /* Active state */
+  a:active {
+    color: rgb(195, 0, 255); /* Color when the link is being clicked */
+  }
+</style>
+    
+    <style>
+    /* Hide scrollbars for all elements */
+    * {
+      scrollbar-width: thin; /* For Firefox */
+      scrollbar-color: transparent transparent; /* For Firefox */
+    }
+
+    /* For WebKit browsers (e.g., Chrome, Safari) */
+    ::-webkit-scrollbar {
+      width: 0px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background-color: transparent;
+    }
+  </style>
+
+</head>
+
+<body style="background: url('bgm.jpg');background-repeat: no-repeat; background-attachment: scroll;
+background-size: 100% 100%;">
+    
+   
+    <h1 align="right" class="scrollable-div" style="display: grid;width: 500px;grid-template-columns: 40px 40px 60px 40px 60px 40px ;">
+      <div></div>
+
+      <div>
+      <a style="font-family:Verdana;font-size:1.7vw"  href="#Invite">
+          
+             <b>
+             Invite
+           </b>
+          
+   </a>
+  </div>
+  <div></div>
+
+  <div>
+  <a style="font-family:Verdana;font-size:1.7vw" href="#About">
+      
+         <b>
+         About
+       </b>
+      
+</a>
+</div>
+<div></div>
+
+  <div>
+  <a style="font-family:Verdana;font-size:1.7vw" href="#Games">
+      
+         <b>
+         Games
+       </b>
+      
+</a>
+</div>
+    </h1>
+     <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <section id="Invite">
+    <h1 align="center">
+        <img src="gbot.png" alt="HTML5 Icon" style="width: 256px;height: 256px;;" >
+        <br />
+        <br />
+        <font style="font-family:sans-serif;color:rgb(7, 179, 247);font-size:7vw" face = "LATO">PlayBuddy</font>
+        <br />
+        <br />
+        <br />
+        <br />
+        <font style="font-family:sans-serif;color:white;font-size:4vw" >Invite the bot into your server</font>
+        <br />
+        <br />
+        <a href="https://discord.com/oauth2/authorize?client_id=1112407952498892870&scope=bot">
+         <button style="border: none;height:70px;width:160px;background: rgb(28, 58, 224);color:white;border-radius: 8px" class="btn btn-primary btn-lg" size="6">
+            <font style="font-family:Verdana;color:white;" face = "LATO" size="6" >
+              <b>
+              Invite
+            </b>
+            </font>
+        </button>
+    </a>
+    </h1>
+</section>
+<br/>
+<br/>
+
+<section id="About">
+    <h2>
+        <font style="font-family:Verdana;color:white;" face = "LATO" size="7" >
+            <u> <font style="font-family:Verdana;color:rgb(255, 255, 255); margin-left: 45px; font-size:3vw" face="LATO" size="5">About</font></u> 
+         </font>
+         
+    </h2>
+    
+    <h3 style = "display: grid;width: 500px;grid-template-columns: 50px 800px 90px 100px;">
+        <div></div>
+         <div><p >
+            
+            
+            <font style="font-family:Verdana;color:rgb(21, 111, 247);font-size:1.7vw;" face="LATO" >PlayBuddy</font>
+                 <font style="font-family:Verdana;color:rgb(255, 255, 255);font-size:1.7vw;" face="LATO" > is an incredible Discord bot that brings a world of entertainment and fun to your server members. With an extensive collection of game commands, PlayBuddy is your go-to companion for creating an engaging gaming experience within your Discord community. Whether it's  quizzes, or interactive mini-games, PlayBuddy has it all. From challenging your server members to hosting exciting tournaments, PlayBuddy ensures non-stop entertainment and enjoyment for everyone. With PlayBuddy on your server, get ready to unleash the fun and foster a lively and dynamic community where gaming enthusiasts can connect, compete, and have a blast together.</font> 
+           
+         </p>
+        </div>
+        
+    </h3>
+
+</section>
+
+
+<br/>
+
+
+
+
+
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.scrollable-div').on('wheel', function(event) {
+        // Prevent default scroll behavior
+        event.preventDefault();
+
+        // Get the amount of scroll distance based on the mouse wheel delta
+        var delta = event.originalEvent.deltaY || event.originalEvent.wheelDelta;
+        var scrollDistance = 100; // Adjust this value to control scroll speed
+
+        // Determine the direction of the scroll
+        var scrollDirection = delta > 0 ? 'right' : 'left';
+
+        // Scroll the div
+        if (scrollDirection === 'right') {
+          $('.scrollable-div').scrollLeft($('.scrollable-div').scrollLeft() + scrollDistance);
+        } else {
+          $('.scrollable-div').scrollLeft($('.scrollable-div').scrollLeft() - scrollDistance);
+        }
+      });
+    });
+  </script>
+
+ 
+ 
+   
+
+    <br/>
+    <br/>
+
+    <section id="Games">
+    <h2 >
+        
+        <font style="font-family:Verdana;color:white;" face = "LATO" size="7" >
+          <u> <font style="font-family:Verdana;color:rgb(255, 255, 255); margin-left: 45px; font-size:3vw" face="LATO" size="5">Games</font></u> 
+       </font>
+   </h2>
+
+
+
+   <h4  class="scrollable-div" style="display: grid;width: auto; direction: ltr; overflow: auto; overflow-x: scroll;grid-template-columns: 50px 300px 30px 300px 30px 300px 30px 300px 30px 300px 30px 300px 30px 300px 30px 300px 30px 300px  ;">
+    <div></div>
+
+    <div align="center" style="background-color: rgb(131, 131, 143);border: 4px outset  rgba(97, 89, 89,0.2); border-radius: 20px; padding: 20px; ">
+        
+         <font align="center" style="font-family:Verdana;color:rgb(245, 245, 245);" face = "LATO" size="5" >
+          <u>
+            <b>
+          connect4
+        </b>
+        </u>
+        </font> 
+         <br/>
+         <br/>
+         <font align="center" style="font-family:Verdana;color:white;" face = "LATO" size="4" >Play connect4 game with your friends</font>
+    </div>
+    <div></div>
+
+    <div align="center" style="background-color: rgb(131, 131, 143);border: 4px outset  rgba(97, 89, 89,0.2); border-radius: 20px; padding: 20px; ">
+        
+         <font align="center" style="font-family:Verdana;color:rgb(245, 245, 245);" face = "LATO" size="5" >
+          <u>
+            <b>
+          tictactoe
+        </b>
+        </u>
+        </font> 
+         <br/>
+         <br/>
+         <font align="center" style="font-family:Verdana;color:white;" face = "LATO" size="4" >Play tictactoe game with your friends</font>
+    </div>
+    <div></div>
+
+    <div align="center" style="background-color: rgb(131, 131, 143);border: 4px outset  rgba(97, 89, 89,0.2); border-radius: 20px; padding: 20px; ">
+        
+         <font align="center" style="font-family:Verdana;color:rgb(245, 245, 245);" face = "LATO" size="5" >
+          <u>
+            <b>
+          rps
+        </b>
+        </u>
+        </font> 
+         <br/>
+         <br/>
+         <font align="center" style="font-family:Verdana;color:white;" face = "LATO" size="4" >Play rock-paper-scissors game with your friends or bot</font>
+    </div>
+    <div></div>
+
+    <div align="center" style="background-color: rgb(131, 131, 143);border: 4px outset  rgba(97, 89, 89,0.2); border-radius: 20px; padding: 20px; ">
+        
+         <font align="center" style="font-family:Verdana;color:rgb(245, 245, 245);" face = "LATO" size="5" >
+          <u>
+            <b>
+          maze
+        </b>
+        </u>
+        </font> 
+         <br/>
+         <br/>
+         <font align="center" style="font-family:Verdana;color:white;" face = "LATO" size="4" >Play maze game</font>
+    </div>
+    <div></div>
+
+    <div align="center" style="background-color: rgb(131, 131, 143);border: 4px outset  rgba(97, 89, 89,0.2); border-radius: 20px; padding: 20px; ">
+        
+         <font align="center" style="font-family:Verdana;color:rgb(245, 245, 245);" face = "LATO" size="5" >
+          <u>
+            <b>
+          guess-the-flag
+        </b>
+        </u>
+        </font> 
+         <br/>
+         <br/>
+         <font align="center" style="font-family:Verdana;color:white;" face = "LATO" size="4" >Start a flag guessing game and play it with your friends</font>
+    </div>
+    <div></div>
+
+    <div align="center" style="background-color: rgb(131, 131, 143);border: 4px outset  rgba(97, 89, 89,0.2); border-radius: 20px; padding: 20px; ">
+        
+         <font align="center" style="font-family:Verdana;color:rgb(245, 245, 245);" face = "LATO" size="5" >
+          <u>
+            <b>
+          quiz
+        </b>
+        </u>
+        </font> 
+         <br/>
+         <br/>
+         <font align="center" style="font-family:Verdana;color:white;" face = "LATO" size="4" >Start a quiz game and play it with your friends</font>
+    </div>
+    <div></div>
+
+    <div align="center" style="background-color: rgb(131, 131, 143);border: 4px outset  rgba(97, 89, 89,0.2); border-radius: 20px; padding: 20px; ">
+        
+         <font align="center" style="font-family:Verdana;color:rgb(245, 245, 245);" face = "LATO" size="5" >
+          <u>
+            <b>
+          coinflip
+        </b>
+        </u>
+        </font> 
+         <br/>
+         <br/>
+         <font align="center" style="font-family:Verdana;color:white;" face = "LATO" size="4" >Flip a coin</font>
+    </div>
+    </h4>
+  </section>
+    
+    <br />
+        <footer class="footer">
+            <p style="font-family:Verdana;color:white;font-size:0.9vw;" face = "LATO" >&copy; MOOD. All rights reserved.</p>
+        </footer>
+</body>
+</html>
