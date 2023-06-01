@@ -9,6 +9,35 @@
       }
     </style>
 
+    <style>
+  * {
+    box-sizing: border-box;
+  }
+
+  .carousel {
+    background-color: rgb(27,28,33);
+    padding: 1em;
+    width: 90%;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    margin: 0 auto;
+  }
+
+  .carousel > div {
+    flex: 0 0 auto;
+    width: 200px;
+    text-align: center;
+    background-color: rgb(59, 59, 61);
+    border: 2px outset  rgba(0, 195, 255, 0.473);
+    border-radius: 10px;
+    padding: 1em;
+    margin-right: 20px;
+    color: white;
+  }
+</style>
+
 <style>
   /* Link styles */
   a {
@@ -154,32 +183,9 @@ background-size: 100% 100%;">
 <br/>
 
 
+ 
 
 
-
-      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script>
-    $(document).ready(function() {
-      $('.scrollable-div').on('wheel', function(event) {
-        // Prevent default scroll behavior
-        event.preventDefault();
-
-        // Get the amount of scroll distance based on the mouse wheel delta
-        var delta = event.originalEvent.deltaY || event.originalEvent.wheelDelta;
-        var scrollDistance = 100; // Adjust this value to control scroll speed
-
-        // Determine the direction of the scroll
-        var scrollDirection = delta > 0 ? 'right' : 'left';
-
-        // Scroll the div
-        if (scrollDirection === 'right') {
-          $('.scrollable-div').scrollLeft($('.scrollable-div').scrollLeft() + scrollDistance);
-        } else {
-          $('.scrollable-div').scrollLeft($('.scrollable-div').scrollLeft() - scrollDistance);
-        }
-      });
-    });
-  </script>
 
  
  
@@ -196,120 +202,171 @@ background-size: 100% 100%;">
        </font>
    </h2>
 
+ <div class="carousel" id="my-carousel">
 
+   
+    
 
-   <h4  class="scrollable-div" style="display: grid;width: auto; direction: ltr; overflow: auto; overflow-x: scroll;grid-template-columns: 50px 300px 30px 300px 30px 300px 30px 300px 30px 300px 30px 300px 30px 300px 30px 300px 30px 300px  ;">
-    <div></div>
-
-    <div align="center" style="background-color: rgb(131, 131, 143);border: 4px outset  rgba(97, 89, 89,0.2); border-radius: 20px; padding: 20px; ">
+    <div >
         
          <font align="center" style="font-family:Verdana;color:rgb(245, 245, 245);" face = "LATO" size="5" >
-          <u>
+          
             <b>
           connect4
         </b>
-        </u>
+        
         </font> 
          <br/>
          <br/>
-         <font align="center" style="font-family:Verdana;color:white;" face = "LATO" size="4" >Play connect4 game with your friends</font>
+         <font align="center" style="font-family:Verdana;color:white;" face = "LATO" size="3" >Play connect4 game with your friends</font>
     </div>
-    <div></div>
+    
 
-    <div align="center" style="background-color: rgb(131, 131, 143);border: 4px outset  rgba(97, 89, 89,0.2); border-radius: 20px; padding: 20px; ">
+    <div >
         
          <font align="center" style="font-family:Verdana;color:rgb(245, 245, 245);" face = "LATO" size="5" >
-          <u>
+          
             <b>
           tictactoe
         </b>
-        </u>
+        
         </font> 
          <br/>
          <br/>
-         <font align="center" style="font-family:Verdana;color:white;" face = "LATO" size="4" >Play tictactoe game with your friends</font>
+         <font align="center" style="font-family:Verdana;color:white;" face = "LATO" size="3" >Play tictactoe game with your friends</font>
     </div>
-    <div></div>
+    
 
-    <div align="center" style="background-color: rgb(131, 131, 143);border: 4px outset  rgba(97, 89, 89,0.2); border-radius: 20px; padding: 20px; ">
+    <div >
         
          <font align="center" style="font-family:Verdana;color:rgb(245, 245, 245);" face = "LATO" size="5" >
-          <u>
+          
             <b>
           rps
         </b>
-        </u>
+        
         </font> 
          <br/>
          <br/>
-         <font align="center" style="font-family:Verdana;color:white;" face = "LATO" size="4" >Play rock-paper-scissors game with your friends or bot</font>
+         <font align="center" style="font-family:Verdana;color:white;" face = "LATO" size="3" >Play rock-paper-scissors game with your friends or bot</font>
     </div>
-    <div></div>
+    
 
-    <div align="center" style="background-color: rgb(131, 131, 143);border: 4px outset  rgba(97, 89, 89,0.2); border-radius: 20px; padding: 20px; ">
+    <div >
         
          <font align="center" style="font-family:Verdana;color:rgb(245, 245, 245);" face = "LATO" size="5" >
-          <u>
+          
             <b>
           maze
         </b>
-        </u>
+        
         </font> 
          <br/>
          <br/>
-         <font align="center" style="font-family:Verdana;color:white;" face = "LATO" size="4" >Play maze game</font>
+         <font align="center" style="font-family:Verdana;color:white;" face = "LATO" size="3" >Play maze game</font>
     </div>
-    <div></div>
+    
 
-    <div align="center" style="background-color: rgb(131, 131, 143);border: 4px outset  rgba(97, 89, 89,0.2); border-radius: 20px; padding: 20px; ">
+    <div >
         
          <font align="center" style="font-family:Verdana;color:rgb(245, 245, 245);" face = "LATO" size="5" >
-          <u>
+          
             <b>
           guess-the-flag
         </b>
-        </u>
+        
         </font> 
          <br/>
          <br/>
-         <font align="center" style="font-family:Verdana;color:white;" face = "LATO" size="4" >Start a flag guessing game and play it with your friends</font>
+         <font align="center" style="font-family:Verdana;color:white;" face = "LATO" size="3" >Start a flag guessing game and play it with your friends</font>
     </div>
-    <div></div>
+    
 
-    <div align="center" style="background-color: rgb(131, 131, 143);border: 4px outset  rgba(97, 89, 89,0.2); border-radius: 20px; padding: 20px; ">
+    <div >
         
          <font align="center" style="font-family:Verdana;color:rgb(245, 245, 245);" face = "LATO" size="5" >
-          <u>
+          
             <b>
           quiz
         </b>
-        </u>
+        
         </font> 
          <br/>
          <br/>
-         <font align="center" style="font-family:Verdana;color:white;" face = "LATO" size="4" >Start a quiz game and play it with your friends</font>
+         <font align="center" style="font-family:Verdana;color:white;" face = "LATO" size="3" >Start a quiz game and play it with your friends</font>
     </div>
-    <div></div>
+    
 
-    <div align="center" style="background-color: rgb(131, 131, 143);border: 4px outset  rgba(97, 89, 89,0.2); border-radius: 20px; padding: 20px; ">
+    <div >
         
          <font align="center" style="font-family:Verdana;color:rgb(245, 245, 245);" face = "LATO" size="5" >
-          <u>
+          
             <b>
           coinflip
         </b>
-        </u>
+        
         </font> 
          <br/>
          <br/>
-         <font align="center" style="font-family:Verdana;color:white;" face = "LATO" size="4" >Flip a coin</font>
+         <font align="center" style="font-family:Verdana;color:white;" face = "LATO" size="3" >Flip a coin</font>
     </div>
-    </h4>
+    </div>
   </section>
     
     <br />
         <footer class="footer">
             <p style="font-family:Verdana;color:white;font-size:0.9vw;" face = "LATO" >&copy; MOOD. All rights reserved.</p>
         </footer>
+
+
+
+        <script>
+          function clickAndDrag(selector) {
+            const scrollSpeed = 2; // adjust how fast drag scroll here
+            const classOnEvent = 'grabbed_elem';
+        
+            const slider = document.querySelector(selector);
+            let isDown = false;
+            let startX;
+            let scrollLeft;
+        
+            slider.addEventListener('mousedown', (e) => {
+              e.preventDefault();
+              isDown = true;
+              slider.classList.add(classOnEvent);
+              startX = e.pageX - slider.offsetLeft;
+              scrollLeft = slider.scrollLeft;
+        
+              // prevent default child behavior
+              document.body.addEventListener('click', function( event ){
+                if (slider.contains(event.target)) {
+                  event.preventDefault();
+                }
+              });
+            });
+        
+            slider.addEventListener('mouseleave', () => {
+              isDown = false;
+              slider.classList.remove(classOnEvent);
+            });
+        
+            slider.addEventListener('mouseup', () => {
+              isDown = false;
+              slider.classList.remove(classOnEvent);
+            });
+        
+            slider.addEventListener('mousemove', (e) => {
+              if (!isDown) return;
+              e.preventDefault();
+        
+              const x = e.pageX - slider.offsetLeft;
+              const walk = (x - startX) * scrollSpeed;
+              slider.scrollLeft = scrollLeft - walk;
+            });
+          }
+        
+          clickAndDrag('#my-carousel');
+        </script>
+        
 </body>
 </html>
